@@ -48,14 +48,14 @@ We assigned a score for each variability of Education SoS, as shown below:
 
 The table below shows for each CS type involved in the Educational SoS, the available CS instances identified during the CS recognition phase, along with their cost, estimated simply on a [1-10] scale.
 
-<span style="color:red">include all 16 SoSs?</span>
+***Vania: include all 16 SoSs?***
 
 
 <center><img src="./images/instancies_var.png"  alt="CS sinstances vs variation point attributes of Educational SoS" width="500"/></center>
 
 After computing the benefits and the expected cost of implement each SoS variant, we can calculate the desirability scores of the SoS variants, as shown below
 
-<span style="color:red">include the desirability scores for all 16 SoSs?</span>.
+***Vania: include the desirability scores for all 16 SoSs?***
 
 <center><img src="./images/desirability_score.png"  alt="The top 7 desirability scores for Educational SoS" width="500"/></center>
 
