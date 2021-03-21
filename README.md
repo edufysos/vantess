@@ -2,43 +2,7 @@
 
 This is the companion repository for the paper "Designing and Testing Systems of Systems: From Variability Models to Test Cases passing through Desirability Assessment".
 
-# Approach
 
-VANTES (VAriability aware-desigN and TEsting of SoS) is a methodology that provides a variability-aware-design and testing approach of SoSs, supporting the SoS engineer to assure that the SoS requirements are fulfilled and the SoS architecture can be easily maintained. The figure below presents an overview  of VANTESS. 
-
-
-<center><img src="./images/steps.png"  alt="VANTESS Overview" width="700"/></center>
-
-Follow, a step by step of our case study considering the Educational SoS. For more details, see in the paper.
-
-## 1. Define at abstract level the SoS overall mission
-
-Figure below presentes the overall mission diagram of Education SoS 
-
-<center><img src="./images/mKAOSBasic.png"  alt="Educational SoS mission diagram" width="500"/></center>
-
-## 2. Make a recognition of available CSs
-
-In the Educational SoS case study,  AOS was fixed and implemented by means of [RosarioSIS](https://www.rosariosis.org/), also available at our [EDUFYSOS repository](https://github.com/edufysos/rosariosis).
-
-Concrete instances of LMS can be offered by [Moodle](https://moodle.org/), [FullTeaching](https://github.com/pabloFuente/full-teaching), and [Google Classroom](https://edu.google.com/products/classroom/) whereas CS could be implemented using [Google Calendar](https://developers.google.com/calendar) or [Yahoo Calendar](https://www.calendar.com/yahoo-calendar-gu-ide/}).
-
-
-Leveraging the knowledge about the functionalities of these concrete CSs we reach in the following list of requirements:
-
-<center><img src="./images/desirability.png"  alt="Requirements of Educational SoS" width="500"/></center>
-
-
-
-## 3. Model variability (nice-to-have reqs)
-Based on the list of the requirements, we modelled the use case diagram below:
-
-<center><img src="./images/useCase1.png"  alt="Educational SoS Use Case diagram" width="500"/></center>
-
- These use cases were enhanced with parameters, contracts, dependencies among use cases and variability points, as shown in the enhanced use case model:
-
-<center><img src="./images/enhancedUseCase.png"  alt="Enhanced use cases model for Educational SoS" width="500"/></center>
- 
 
 ## 4. Assess the desirability of SoS variants
 
