@@ -18,6 +18,8 @@ A more detailed UCTS can be found [here](./images/SoSUCTS.png).
 
 ## 8. Executable test cases
 
+The test cases can be found at artifacts/test in VANTESS Repository. Instructions on how to configure the constituent systems can be found in the [EDUFYSoS repository](https://github.com/edufysos/edufysos), more specifically [here](https://github.com/edufysos/edufysos/blob/master/guidelines/BasicEducationalSoS.pdf).
+
 # Team
 
 * Francesca Lonetti (CNR-ISTI) 
