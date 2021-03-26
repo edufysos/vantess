@@ -9,18 +9,18 @@ VANTES (VAriability aware-desigN and TEsting of SoS) is a methodology that provi
 
 ## 4. Assess the desirability of SoS variants
 
-The complete desirability scores can be found [here](./artifacts/SoSDesirability.xlsx).
+The complete desirability scores for Educational SoS can be found [here](./artifacts/SoSDesirability.xlsx).
 
 ## 5. Derive a simulation model for selected SoS
 
-A more detailed UCTS can be found [here](./images/SoSUCTS.png).
+A more detailed UCTS for Educational SoS can be found [here](./images/SoSUCTS.png).
 ## 7. Test scenarios generation
 
-More sequence diagrams can be found in artifacts/sequences.
+More Educational SoS sequence diagrams  can be found in artifacts/sequences.
 
 ## 8. Executable test cases
 
-The test cases can be found at artifacts/test in VANTESS Repository. Instructions on how to configure the constituent systems can be found in the [EDUFYSoS repository](https://github.com/edufysos/edufysos), more specifically [here](https://github.com/edufysos/edufysos/blob/master/guidelines/BasicEducationalSoS.pdf).
+The test cases for Educational SoS can be found at artifacts/test in VANTESS Repository. Instructions on how to configure the constituent systems can be found in the [EDUFYSoS repository](https://github.com/edufysos/edufysos), more specifically [here](https://github.com/edufysos/edufysos/blob/master/guidelines/BasicEducationalSoS.pdf).
 
 # Team
 
