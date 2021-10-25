@@ -1,8 +1,5 @@
-package lps.test.edufysos;
+package lps.test.edufysos.delete;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.After;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -13,11 +10,9 @@ import lps.test.edufysos.create.CreateTeacherTest;
 import lps.test.edufysos.create.CreateWebDriver;
 import lps.test.edufysos.login.LoginTest;
 import lps.test.edufysos.util.Assignment;
-import lps.test.edufysos.util.CSsPropertyValues;
 
-
-public class SetAssigmentTest {
-
+public class DeleteAssignmentTest {
+	
 	private WebDriver driverMoodle;
 	//private static CSsPropertyValues propCS = new CSsPropertyValues();
 	
@@ -28,7 +23,7 @@ public class SetAssigmentTest {
 
 	@BeforeClass
 	public static void configuraDriver() {
-		System.setProperty("webdriver.chrome.driver",  "D:\\programas\\java\\webdriver\\chrome\\chromedriver-v94.exe");
+		System.setProperty("webdriver.chrome.driver",  "D:\\programas\\java\\webdriver\\chrome\\chromedriver.exe");
 	}
 	
 	public void loginAdminMoodle() {
@@ -62,32 +57,16 @@ public class SetAssigmentTest {
 		driverMoodle.findElement(By.xpath("//a[contains(text(),'Turn editing on')]")).click();
 		this.waitSeconds(1000);
 		
-		driverMoodle.findElement(By.xpath("//span[text()='Add an activity or resource']")).click();
+		//div[@class='action-menu-item']
+		driverMoodle.findElement(By.xpath("//div[@class='action-menu-item']/../div")).click();
 		this.waitSeconds(1000);
 		
-		driverMoodle.findElement(By.xpath("//span[text()='Assignment']/../input")).click();
+		driverMoodle.findElement(By.xpath("//span[contains(text(), 'Delete')]")).click();
 		this.waitSeconds(1000);
 		
-		driverMoodle.findElement(By.xpath("//input[@value='Add']")).click();
+		driverMoodle.findElement(By.xpath("//input[@value='Yes']")).click();
 		this.waitSeconds(1000);
-		
-		// ALTERNATIVA DE xpath: //label[contains(text(),'Assignment name')]/parent::div/following-sibling::div/input
-		driverMoodle.findElement(By.id("id_name")).sendKeys(this.assignment.getName());
-		this.waitSeconds(1000);
-		driverMoodle.findElement(By.xpath("//div[@role='textbox']")).sendKeys(this.assignment.getDescription());
-		this.waitSeconds(1000);
-		
-		driverMoodle.findElement(By.xpath("//input[@value='Save and return to course']")).click();
-		this.waitSeconds(1000);
-		
-		Boolean existAssignment = driverMoodle.findElements(By.xpath("//span[text()='"+this.assignment.getName()+"']")).size() > 0;
-		assertTrue(existAssignment);
 		
 	}
-	
-	
-	@After
-	public void quitDriver() {
-		//driver.quit();
-	}
+
 }

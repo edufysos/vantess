@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 
+import lps.test.edufysos.login.LoginTest;
 import lps.test.edufysos.util.CSsPropertyValues;
 import lps.test.edufysos.util.Course;
 import lps.test.edufysos.util.Subject;
@@ -20,9 +21,6 @@ public class AddCourseTest {
 	
 	protected WebDriver driverRosario;
 	protected WebDriver driverMoodle;
-	
-
-	
 	
 
 	@BeforeAll
