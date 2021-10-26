@@ -6,6 +6,8 @@ public class Class {
 	private Subject subject;	
 	private String period;
 	private User teacher;
+	private String subjectName;
+	private String courseName;
 	
 	
 	public Class(Subject subject, String period, User teacher) {

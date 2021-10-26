@@ -1,4 +1,4 @@
-package lps.test.edufysos;
+package lps.test.edufysos.enroll;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -23,6 +23,9 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 
+import lps.test.edufysos.AddCourseTest;
+import lps.test.edufysos.create.CreateTeacherTest;
+import lps.test.edufysos.login.LoginTest;
 import lps.test.edufysos.util.CSsPropertyValues;
 import lps.test.edufysos.util.Class;
 import lps.test.edufysos.util.Subject;
@@ -40,7 +43,7 @@ public class EnrollStudentExceptionalTest {
 	private LoginTest lt = new LoginTest();
 	private CreateTeacherTest ctt = new CreateTeacherTest();
 	private AddCourseTest cct = new AddCourseTest();
-	private CreateClassTest cclt = new CreateClassTest();
+	private CreateClassTestOld cclt = new CreateClassTestOld();
 
 	
 	@BeforeAll
